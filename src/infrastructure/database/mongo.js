@@ -1,7 +1,11 @@
 const mongoose = require("mongoose");
 
 const connectDB = async () => {
-  await mongoose.connect("mongodb://localhost:27017/logs-db");
+  const MONGO_URI =
+  process.env.MONGO_URI || "mongodb://mongo:27017/logs-db";
+
+mongoose.connect(MONGO_URI);
+;
   console.log("MongoDB connected");
 };
 
