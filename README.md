@@ -29,9 +29,9 @@ It demonstrates how user activity logs can be processed asynchronously using a m
 
 ```
 src/
- ├── domain/            # Business logic
- ├── infrastructure/    # Kafka & MongoDB
- ├── application/       # Controllers
+ ├── domain/
+ ├── infrastructure/
+ ├── application/
  ├── app.js
  └── server.js
 ```
