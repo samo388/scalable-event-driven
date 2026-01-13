@@ -22,7 +22,6 @@ It demonstrates how user activity logs can be processed asynchronously using a m
 - Apache Kafka (KafkaJS)
 - MongoDB (Mongoose)
 - Docker & Docker Compose
-- Kubernetes (Minikube)
 
 ---
 
@@ -78,14 +77,6 @@ http
 GET /logs?page=1&limit=10
 
 ---
-
-## Kubernetes (Optional)
-
-```bash
-minikube start
-kubectl apply -f k8s/
-minikube service log-service
-```
 
 ---
 
